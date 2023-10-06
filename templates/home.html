@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LC Prediction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("{% static 'images/lungimg.jpg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo-text {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #e74c3c;
+        }
+
+        .hero {
+            padding: 150px 0;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        .hero h1 {
+            font-size: 100px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 40px;
+            opacity: 0.8;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .prediction {
+            font-size: 64px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #075829;
+        }
+
+        .card-deck {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo-text">LC Cancer Prediction</a>
+            <ul class="nav-links">
+                <li><a href="signup">Create an Account</a></li>
+                <li><a href="signin">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1> <b> Discover Your Health </b></h1>
+        <p> <b> Smart and easy lung cancer prediction based on symptoms.</b></p>
+        <!-- <div class="prediction">97.6% Accuracy</div> -->
+    </section>
+    
+    <div class="container">
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Predict</h5>
+                    <p class="card-text">Predict lung cancer using advanced machine learning algorithms.</p>
+                </div>
+            </div>
+            <!-- <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Accuracy</h5>
+                    <p class="card-text">Achieve an accuracy rate of 97.6% in lung cancer prediction.</p>
+                </div>
+            </div> -->
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Easy to Use</h5>
+                    <p class="card-text">Simple and user-friendly interface for seamless experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
